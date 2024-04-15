@@ -8,6 +8,7 @@ class FlatIterator:
     def __iter__(self):
         return self
 
+    
     def __next__(self):
         while self.outer_index < len(self.list_of_list):
             while self.inner_index < len(self.list_of_list[self.outer_index]):
